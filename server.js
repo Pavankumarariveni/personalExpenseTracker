@@ -16,7 +16,7 @@ const port = process.env.PORT || 3000
 const initializeDBAndServer = async () => {
     try {
         db = await open({
-            filename: path.join(__dirname , 'expenses.db' ),
+            filename: path.join(__dirname , 'newexpenses.db' ),
             driver: sqlite3.Database,
         })
         app.listen(port, () => {
